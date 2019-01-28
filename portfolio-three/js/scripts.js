@@ -2,7 +2,7 @@ $(function() {
     $('.slick-top').slick({
     	prevArrow: '',
     	nextArrow: '',
-    	//autoplay: true,
+    	autoplay: true,
   		autoplaySpeed: 1500,
   		dots: true,
  		infinite: true
@@ -46,7 +46,10 @@ $(function() {
 
 	$('.reviews__carousel').slick({
 		dots: true,
-		arrows: false
+		arrows: true,
+		infinite: true,
+		prevArrow: '<a href="#" class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>',
+		nextArrow: '<a href="#" class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>'
 	});
 
 	$('select').selectize();
@@ -62,7 +65,7 @@ $(function() {
 			centersTexts.push(point);
 		});
         var myMap = new ymaps.Map("map", {
-            center: [64.143943, -21.939843],
+            center: [-18.909725, 47.524320],
 			zoom: 16
 		});
 

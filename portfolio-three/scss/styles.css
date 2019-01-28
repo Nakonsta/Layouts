@@ -824,6 +824,21 @@ html, body {
   background-color: #fff;
 }
 
+.reviews .slick-next, .reviews .slick-prev {
+  display: block;
+  color: #fff;
+  font-size: 50px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+}
+
+.reviews .slick-next {
+  right: 0;
+}
+
 .contacts {
   color: #373737;
   margin-top: 95px;
@@ -955,7 +970,7 @@ html, body {
   border-color: #facb36;
 }
 
-.map .map__panorama-2, .map .map__panorama-3 {
+.map .map__panorama-1, .map .map__panorama-3 {
   display: none;
 }
 

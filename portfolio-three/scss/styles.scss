@@ -712,6 +712,19 @@ html, body {
 	.slick-dots li.slick-active button::before {
 		background-color: #fff;
 	}
+	.slick-next, .slick-prev {
+		display: block;
+		color: #fff;
+		font-size: 50px;
+		background-color: transparent;
+		border: none;
+		position: absolute;
+		top: 50%;
+		z-index: 3;
+	}
+	.slick-next {
+		right: 0;
+	}
 
 }
 
@@ -804,7 +817,7 @@ html, body {
 			border-color: $accent;
 		}
 	}
-	.map__panorama-2, .map__panorama-3 {
+	.map__panorama-1, .map__panorama-3 {
 		display: none;
 	}
 	&__yandex {
