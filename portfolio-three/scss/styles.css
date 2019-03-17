@@ -219,6 +219,7 @@ html, body {
   max-height: 640px;
   min-height: 640px;
   outline: none;
+  background-size: cover !important;
 }
 
 .firstScreen__slide:hover, .firstScreen__slide:focus {
@@ -227,6 +228,7 @@ html, body {
 
 .firstScreen__slide-1 {
   background: url(../img/bg-sl-1.jpg) no-repeat 0% 70%;
+  background-size: cover !important;
 }
 
 .firstScreen__slide-1 .firstScreen__text {
@@ -241,14 +243,17 @@ html, body {
 
 .firstScreen__slide-3 {
   background: url(../img/bg-sl-6.jpg) no-repeat 100% 26%;
+  background-size: cover !important;
 }
 
 .firstScreen__slide-4 {
   background: url(../img/bg-sl-9.jpg) no-repeat 50% 25%;
+  background-size: cover !important;
 }
 
 .firstScreen__slide-5 {
   background: url(../img/bg-sl-5.jpg) no-repeat 50%;
+  background-size: cover !important;
 }
 
 /* Slick dots */
