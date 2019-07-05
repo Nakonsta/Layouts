@@ -1,0 +1,37 @@
+.slider-content p {
+    color: #000;
+}
+
+.i-action {
+    background: url(../../img/content/remont-tormoznoy-sistemy/action.png) 0 0 no-repeat;
+    width: 193px;
+    height: 193px;
+    position: relative;
+    top: -81px;
+    margin-bottom: -115px;
+}
+.drop {
+    width: 145px;
+    height: 168px;
+    background: url(../../img/content/remont-tormoznoy-sistemy/drop.png) 0 0 no-repeat;
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.free-block {
+    margin: 47px 0 60px;
+}
+@media (max-width:1024px){
+    .i-action {
+        display: none;
+    }
+}
+@media (max-width:760px){
+    .slider-content p {
+        font-size: 34px;
+        line-height: 37px;
+    }
+}

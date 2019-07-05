@@ -1,0 +1,25 @@
+
+.i-action {
+    background: url(../../img/content/diagnostika-remont-podveski/action.png) 0 0 no-repeat;
+    width: 193px;
+    height: 193px;
+    position: relative;
+    top: -81px;
+    margin-bottom: -115px;
+}
+
+
+.free-block {
+    margin: 47px 0 60px;
+}
+@media (max-width:1024px){
+    .i-action {
+        display: none;
+    }
+}
+@media (max-width:760px){
+    .slider-content p {
+        font-size: 34px;
+        line-height: 37px;
+    }
+}
