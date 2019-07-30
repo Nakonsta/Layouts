@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /111
-Disallow: /noindex
-Disallow: ?m=201703
-Disallow: ?page_id=19
-Disallow: ?p=1
-Disallow: ?cat=1
-Host: https://megaservice.by
-Sitemap: https://megaservice.by/sitemap.xml
