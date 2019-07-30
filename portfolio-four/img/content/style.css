@@ -1,0 +1,91 @@
+.slider-content p {
+    color: #000;
+}
+
+.drop {
+    width: 145px;
+    height: 168px;
+    background: url(../../img/content/protochka-tormoznyh-diskov/drop.png) 0 0 no-repeat;
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.i-map-oil {
+    background: url(../../img/content/protochka-tormoznyh-diskov/map_icon.png) 0 0 no-repeat;
+    width: 130px;
+    height: 112px;
+    position: relative;
+}
+.free-text {
+    vertical-align: sub;
+}
+
+.red_list{
+    overflow: auto;
+    margin-bottom: 50px;
+}
+.red_list li{
+    display: block;
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
+    padding-left: 32px; 
+    position: relative;
+}
+.red_list li:before{
+    content: "";
+    height: 6px;
+    width: 6px;
+    background: #dd0012;
+    position: absolute;
+    left: 0;
+    border-radius: 100%;
+    top: 8px;
+}
+.red_list li a{
+    color: #dd0012;
+    font-size: 16px;
+    text-decoration: underline;
+}
+.red_list li a:hover{text-decoration: none;}
+.wrap-comparison{
+    margin-bottom: 50px;
+}
+.title__comparison{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000;
+}
+.title__comparison.red{
+    color: #dd0012;
+    position: relative;
+}
+.title__comparison.red:before{
+    content: "";
+    width: 54px;
+    height: 10px;
+    position: absolute;
+    background: url(../../img/content/protochka-tormoznyh-diskov/arrow.png) 0 0 no-repeat;
+    left: -40px;
+    top: 8px;
+}
+.img__comparison img{
+    max-width: 100%;
+}
+
+@media (max-width:767px){
+    .title__comparison.red{
+        margin-top: 30px;
+    }
+    .title__comparison.red:before{
+        display: none;
+    }
+    .red_list li {
+        width: 100%;
+    }
+}
