@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIA,CAAC,CACG,UAAU,CAAE,UAAU,CAE1B,SAAU,CACN,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,IAAO,CACd,UAAU,CAAE,MAAM",
-"sources": ["../scss/_variables.sass"],
-"names": [],
-"file": "bundle.css"
-}
