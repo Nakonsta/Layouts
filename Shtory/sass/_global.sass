@@ -23,3 +23,68 @@ a:hover,
 a:focus
     text-decoration: none
     color: $gray
+
+svg, svg path
+    transition: all .5s ease-in
+
+.h1
+    font-weight: 500
+    font-size: 62px
+    line-height: 75px
+    text-align: center
+    text-transform: uppercase
+    color: #FFFFFF
+    &--homepage
+        color: $malina
+
+.h2
+    font-family: 'Andantino', Arial, sans-serif
+    font-size: 48px
+    line-height: 56px
+
+.btn
+    font-weight: 300
+    font-size: 16px
+    line-height: 1
+    display: flex
+    align-items: center
+    text-align: center
+    letter-spacing: 0.035em
+    color: #3ACBC6
+    background: #FFFFFF
+    border: 1px solid #77CEC8
+    border-radius: 40px
+    height: 50px
+    min-width: 239px
+    padding: 0 15px
+    transition: all .5s ease-in
+    &:hover, &:focus
+        background: #93CFCB
+        border-color: 1px solid #FFFFFF
+        color: #FFFFFF
+    &:active
+        background: #3ACBC6
+        border-color: 1px solid #FFFFFF
+        color: #FFFFFF
+
+.btn--white
+    min-width: 196px
+    background: #FFFFFF
+    color: #000000
+    letter-spacing: normal
+    border: 2px solid transparent
+    &:hover, &:focus, &:active
+        border-color: #FFFFFF
+
+.btn--tiffany
+    padding: 0 22px
+    color: #FFFFFF
+    background: linear-gradient(180deg, #ADDCD7 0%, #96CCC6 100%)
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+    border: none
+    &:hover, &:focus
+        background: linear-gradient(180deg, #93CFCB 0%, #77CEC8 100%)
+        border: none
+    &:active
+        background: linear-gradient(180deg, #3ACBC6 0%, #83CDC5 100%)
+        border: none

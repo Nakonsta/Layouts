@@ -1,0 +1,83 @@
+.main
+    &__top
+        position: relative
+
+    .parallax
+        perspective: 1px
+        height: 100vh
+        overflow-x: hidden
+        overflow-y: auto
+
+    .parallax__bg
+        background-color: $rose
+        background-image: url(../img/main-banner.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        height: 130vh
+        width: 100%
+
+    .parallax__layer
+        position: absolute
+        top: 0
+        right: 0
+        bottom: -100px
+        left: 0
+
+    .parallax__layer--base
+        transform: translateZ(0)
+
+    .parallax__layer--back
+        transform: translateZ(-1px) translateX(-5px) scale(2)
+        z-index: 3
+        
+    &__banner
+        display: flex
+        justify-content: center
+        align-items: center 
+        height: 100vh
+        
+    &__title
+        &-stroke
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 760px
+            height: 352px
+            background-color: transparent
+            border: 1px solid $rose
+        &-block
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            width: 730px
+            height: 322px
+            background: linear-gradient(113.8deg, #FDF2EF 0%, #FFFFFF 100%)
+            box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.15)
+    &__subtitle
+        font-weight: 300
+        font-size: 18px
+        text-align: center
+        margin: -2px 0 46px
+    &__arrow
+        position: absolute
+        bottom: 81px
+        left: 50%
+        transform: translateX(-50%)
+        &-svg:hover path,
+        &-svg:focus path
+            stroke: $malina
+
+.service
+    margin-top: 20px
+    background: linear-gradient(transparent, rgba(255,255,255,0.5) 10%, rgba(255,255,255,0.8) 40%, #fff)
+    &__inner
+        text-align: center
+    &__items
+        display: flex
+        justify-content: center
+        align-items: center
+    &__item
+        margin-right: 53px
+        &:last-child
+            margin-right: 0

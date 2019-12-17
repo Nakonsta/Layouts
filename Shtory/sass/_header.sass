@@ -1,8 +1,21 @@
 .header
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
     padding: 23px 0
     color: #ffffff
     background: linear-gradient($gray, transparent)
+    &__logo
+        display: flex
+        flex-direction: column
+        &-text
+            display: block
+            margin-top: 9px
+            margin-left: 18px
+
     &__nav
+        padding-top: 11px
         &-list
             list-style: none
             display: flex
@@ -13,6 +26,7 @@
             line-height: 18px
             color: #ffffff
     &__phone
+        padding-top: 11px
         text-align: right
         &-link
             font-weight: 800
