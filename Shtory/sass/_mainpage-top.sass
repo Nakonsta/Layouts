@@ -1,26 +1,33 @@
 .main
     &__top
         position: relative
-
+        background-color: #FAF5F7
     .parallax
         perspective: 1px
         height: 100vh
         overflow-x: hidden
         overflow-y: auto
+        -ms-overflow-style: none
+        scrollbar-width: none
+        &::-webkit-scrollbar 
+            width: 0px
+            background: transparent
 
     .parallax__bg
         background-color: $rose
         background-image: url(../img/main-banner.jpg)
+        background-image: url(https://i.artfile.me/wallpaper/05-06-2014/3000x2000/interer-spalnya-podushki-krovat-dizajn-833245.jpg)
         background-repeat: no-repeat
         background-size: cover
-        height: 130vh
+        background-position: 50% 0
+        height: 170vh
         width: 100%
 
     .parallax__layer
         position: absolute
         top: 0
         right: 0
-        bottom: -100px
+        bottom: -950px
         left: 0
 
     .parallax__layer--base
@@ -34,34 +41,33 @@
         display: flex
         justify-content: center
         align-items: center 
-        height: 100vh
+        height: 125vh
+        &-flex
         
     &__title
         &-stroke
-            display: flex
-            justify-content: center
-            align-items: center
             width: 760px
             height: 352px
-            background-color: transparent
-            border: 1px solid $rose
+            margin-top: 250px
+            border-color: $rose
         &-block
             display: flex
             justify-content: center
             align-items: center
             flex-direction: column
-            width: 730px
             height: 322px
             background: linear-gradient(113.8deg, #FDF2EF 0%, #FFFFFF 100%)
             box-shadow: 15px 0px 20px rgba(0, 0, 0, 0.15)
+
     &__subtitle
         font-weight: 300
         font-size: 18px
         text-align: center
         margin: -2px 0 46px
+        
     &__arrow
         position: absolute
-        bottom: 81px
+        bottom: 750px
         left: 50%
         transform: translateX(-50%)
         &-svg:hover path,
@@ -69,8 +75,22 @@
             stroke: $malina
 
 .service
-    margin-top: 20px
-    background: linear-gradient(transparent, rgba(255,255,255,0.5) 10%, rgba(255,255,255,0.8) 40%, #fff)
+    padding: 20px 0 80px
+    position: relative
+    background: linear-gradient(transparent, rgba(255,255,255,0.5) 8%, rgba(255,255,255,0.8) 16%, #fff 30%)
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        height: 183px
+        background-image: url(../img/banner-mask.png)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: 50% 0
+    .h2
+        padding-bottom: 41px
     &__inner
         text-align: center
     &__items
@@ -79,5 +99,25 @@
         align-items: center
     &__item
         margin-right: 53px
+        position: relative
+        max-width: 176px
+        &::after
+            content: ''
+            position: absolute
+            right: -26px
+            top: 7px
+            width: 1px
+            height: 138px
+            background-color: $rose
         &:last-child
             margin-right: 0
+            &::after
+                content: none
+        &-title
+            margin: 37px 0 23px
+            text-align: center
+            text-transform: uppercase
+            font-weight: 300
+        &-description
+            font-weight: 300
+            text-align: center

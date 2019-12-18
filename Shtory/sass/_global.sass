@@ -11,6 +11,9 @@ html, body
     margin: 0
     padding: 0
 
+body
+    background: #FAF5F7
+
 ul
     padding: 0
 
@@ -34,6 +37,7 @@ svg, svg path
     text-align: center
     text-transform: uppercase
     color: #FFFFFF
+    margin-bottom: 0
     &--homepage
         color: $malina
 
@@ -41,12 +45,24 @@ svg, svg path
     font-family: 'Andantino', Arial, sans-serif
     font-size: 48px
     line-height: 56px
+    margin-bottom: 35px
+    &--line
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            bottom: 17px
+            left: 0
+            height: 1px
+            width: 47px
+            background-color: $rose
 
 .btn
     font-weight: 300
     font-size: 16px
     line-height: 1
     display: flex
+    justify-content: center
     align-items: center
     text-align: center
     letter-spacing: 0.035em
@@ -88,3 +104,14 @@ svg, svg path
     &:active
         background: linear-gradient(180deg, #3ACBC6 0%, #83CDC5 100%)
         border: none
+
+.stroke
+    border: 1px solid #ffffff
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: transparent
+    &__inner
+        width: calc(100% - 30px)
+        margin-top: 15px
+        margin-bottom: 15px
