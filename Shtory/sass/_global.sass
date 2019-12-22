@@ -38,8 +38,16 @@ svg, svg path
     text-transform: uppercase
     color: #FFFFFF
     margin-bottom: 0
+    @media (max-width: 767px)
+        font-weight: 800
+        font-size: 42px
+        line-height: 51px
     &--homepage
         color: $malina
+        @media (max-width: 767px)
+            color: #ffffff
+        @media (max-width: 575px)
+            max-width: 260px
 
 .h2
     font-family: 'Andantino', Arial, sans-serif
@@ -56,6 +64,9 @@ svg, svg path
             height: 1px
             width: 47px
             background-color: $rose
+    @media (max-width: 767px)
+        font-size: 32px
+        line-height: 100%
 
 .btn
     font-weight: 300
@@ -82,6 +93,11 @@ svg, svg path
         background: #3ACBC6
         border-color: 1px solid #FFFFFF
         color: #FFFFFF
+    @media (max-width: 767px)
+        line-height: 170%
+        padding-top: 9px
+        padding-bottom: 9px
+        height: auto
 
 .btn--white
     min-width: 196px
@@ -104,6 +120,9 @@ svg, svg path
     &:active
         background: linear-gradient(180deg, #3ACBC6 0%, #83CDC5 100%)
         border: none
+    @media (max-width: 767px)
+        padding-top: 9px
+        padding-bottom: 9px
 
 .stroke
     border: 1px solid #ffffff
@@ -115,3 +134,45 @@ svg, svg path
         width: calc(100% - 30px)
         margin-top: 15px
         margin-bottom: 15px
+
+.keep-in-touch
+    position: relative
+    z-index: 10
+    &__outer
+        position: fixed
+        right: 15px
+        bottom: 50px
+        border-radius: 50%
+        width: 90px
+        height: 90px
+        background-color: rgba(147, 207, 203, 0.15)
+        display: flex
+        justify-content: center
+        align-items: center
+    &__inner            
+        background-color: $tiffany
+        width: 60px
+        height: 60px
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+
+.scroll-up
+    position: fixed
+    left: 0
+    bottom: 40px
+    width: 36px
+    height: 36px
+    background: #FAF5F7
+    border: 1px solid $gray
+    padding: 5px 6px 5px 4px
+    text-align: center
+    transition: all .5s ease-in
+    z-index: 10
+    &:hover, &:focus
+        background-color: $tiffany
+        border-color: $tiffany
+    &:hover path,
+    &:focus path
+        stroke: #ffffff

@@ -1,3 +1,54 @@
 .footer
     padding: 30px 0 11px
     background-color: $gray
+    &__inner
+        position: relative
+    &__top-line
+        padding-bottom: 30px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            width: 95%
+            height: 1px
+            left: 0
+            bottom: 0
+            background-color: rgba(255, 255, 255, 0.3)
+    &__middle-line
+        padding: 17px 0 9px
+    &__logo
+        position: absolute
+        top: 0
+        left: 15px
+    &__nav
+        padding-top: 20px
+        &-list
+            list-style: none
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-bottom: 0
+        &-item
+            margin-right: 34px
+            &:last-child
+                margin-right: 0
+        &-link
+            font-weight: 300px
+            line-height: 18px
+            color: #ffffff
+    &__soc
+        display: flex
+        justify-content: center
+        &-link
+            display: inline-block
+            margin-right: 15px
+            &:last-child
+                margin-right: 0
+        &-text
+            font-size: 0
+    &__copywrite
+        font-weight: 300
+        font-size: 14px
+        line-height: 150%
+        color: rgba(255, 255, 255, 0.7)
+        text-align: center
