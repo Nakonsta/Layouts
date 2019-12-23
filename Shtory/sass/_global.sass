@@ -64,6 +64,8 @@ svg, svg path
             height: 1px
             width: 47px
             background-color: $rose
+            @media (max-width: 767px)
+                bottom: -17px
     @media (max-width: 767px)
         font-size: 32px
         line-height: 100%
@@ -149,6 +151,7 @@ svg, svg path
         display: flex
         justify-content: center
         align-items: center
+        animation: pulse 2s infinite
     &__inner            
         background-color: $tiffany
         width: 60px
@@ -159,6 +162,7 @@ svg, svg path
         align-items: center
 
 .scroll-up
+    display: none
     position: fixed
     left: 0
     bottom: 40px

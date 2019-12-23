@@ -1,41 +1,91 @@
 .design
     padding-bottom: 166px
+    @media (max-width: 767px)
+        padding-bottom: 0
+    .container
+        @media (max-width: 767px)
+            max-width: none
+            width: 100%
+            padding: 0
     &__designer
         background: url(../img/designer.jpg) no-repeat 50% 50% / cover
         width: 100%
         height: 526px
+        @media (max-width: 575px)
+            height: 378px
     &__order
         padding: 32px 0 0 20px
         position: relative
+        @media (max-width: 1199px)
+            padding-top: 0
+        @media (max-width: 767px)
+            padding-left: 0
+            background-color: #ffffff
     .h2
         margin-bottom: 25px
+        @media (max-width: 1199px)
+            line-height: 1
+            margin-bottom: 15px
+        @media (max-width: 767px)
+            text-align: center
+            margin-bottom: 20px
     &__info
         font-weight: 300
         font-size: 14px
         padding-bottom: 35px
         max-width: 385px
+        @media (max-width: 767px)
+            text-align: center
+            margin: 0 auto
+            font-size: 16px
+            padding-bottom: 44px
+            padding: 0 15px 35px
     .stroke
         padding: 11px 13px
     &__form
         min-width: 357px
+        @media (max-width: 575px)
+            min-width: 0
+            text-align: center
         &-wrapper
             position: absolute
             right: 0
             bottom: -35px
             z-index: 2
+            @media (max-width: 767px)
+                position: static
+                width: 100%
+            .stroke
+                @media (max-width: 767px)
+                    padding: 28px 15px 42px
+                    @media (max-width: 575px)
+                        padding-left: 0
+                        padding-right: 0
         &-block
             background-color: #ffffff
             padding: 67px 95px 58px
+            @media (max-width: 767px)
+                padding: 0
         &-title
             font-weight: 800
             font-size: 18px
             text-transform: uppercase
             color: $gray
             margin-bottom: 30px
+            @media (max-width: 575px)
+                text-transform: none
+                font-size: 16px
+                font-weight: 300
+                margin-bottom: 18px
+                text-align: center
         &-input
             margin-bottom: 18px
             width: 100%
+            @media (max-width: 575px)
+                max-width: 260px
         .btn
             margin-top: 8px
             height: 53px
             min-width: 255px
+            @media (max-width: 767px)
+                margin: 7px auto 0
